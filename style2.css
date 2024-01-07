@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  background-color: #ebe9eb;
+}
+
+nav.navbar.navbar-default {
+  height: 100px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 75px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#background {
+  margin-top: 120px;
+  background: url(beranda/banners.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 111px;
+  height: 638px;
+  max-height: 1112px;
+}
+
+.banner {
+  background: url(beranda/laut2.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: aliceblue;
+}
+.section-ket {
+  background-color: rgb(225, 18, 18);
+  padding: 4em;
+  float: left;
+  width: 50%;
+}
+.section-apa {
+  background-color: rgb(54, 7, 242);
+  padding: 4em;
+}

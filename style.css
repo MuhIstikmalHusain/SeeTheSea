@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(145deg, #091126, #ff0185); */
+  /* background: linear-gradient(144deg,rgb(59, 136, 203) 0%,rgb(48, 160, 145) 100%) */
+}
+
+.all-content {
+  background: #050405;
+}
+
+/*=========================NAVBAR=========================*/
+
+.navbar {
+  transition: top 0.5s; /* Efek transisi pada navbar */
+  padding: 20px; /* Padding pada navbar; */
+}
+
+.navbar.scrolled {
+  background-color: #343a40; /* Warna latar belakang navbar saat di-scroll */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Tebal tulisan pada brand */
+  color: #000000 !important; /* Warna teks pada brand */
+  font-size: 32px; /* Ukuran font pada brand */
+}
+
+.navbar-toggler {
+  border: none; /* Menghapus border pada tombol toggle */
+}
+
+.navbar-toggler-icon {
+  background-color: #e73f3f; /* Warna ikon toggle */
+}
+
+.navbar-nav {
+  text-align: center; /* Pusatkan teks menu pada navbar */
+}
+
+.nav-item {
+  margin-right: 15px; /* Jarak antar item menu */
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: rgb(14, 128, 130) !important; /* Warna teks pada menu saat dihover */
+}
+
+/*=========================BERANDA========================= */
+.banner {
+  background: url(gambar/banners.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 23px;
+  color: aliceblue;
+}
+/* Keterangan Start*/
+
+.keterangan {
+  background: #f8f8f8;
+  font-size: 15px;
+  padding: 4rem;
+  text-align: justify;
+}
+
+.large-paragraph {
+  font-size: 18px;
+}
+.large-paragraph h2 {
+  font-size: 50px;
+  color: rgb(14, 128, 130);
+}
+
+.gambar {
+  width: 100%;
+  height: 100%;
+}
+/* Keterangan End*/
+
+.deskripsi {
+  background-color: rgb(255, 255, 255);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("beranda/banner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Kontak */
+.kontak,
+row {
+  display: flex;
+  align-items: center;
+  background: url(beranda/banners.jpg);
+}
+
+/* ======================Tentang Kami====================*/
+.team-wrapper {
+  background: #f8f8f8;
+  padding: 50px 0px;
+  font-family: "Arial", sans-serif;
+}
+
+.section-title {
+  color: rgb(14, 128, 130);
+  font-size: 55px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tentang-kami {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.team-content {
+  float: 1;
+  width: 600px;
+  margin: 0px 25px;
+  animation: fadeInUp 2s ease;
+}
+
+.team-content h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.team-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  color: #666;
+  text-align: justify;
+}
+.team-content button {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.team-content button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+.team-image {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+  animation: fadeInRight 2s ease;
+}
+.team-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-title h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 44px;
+  font-weight: 700px;
+}
+
+.item-kelompok {
+  position: relative;
+  background: #c7c7e9;
+  margin: 15px 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item-gambar img {
+  width: 100%;
+  height: 250px;
+}
+.item-gambar {
+  width: 100%;
+  height: 100%;
+}
+
+.item-meta {
+  position: absolute;
+  background: #20204f;
+  width: 100%;
+  bottom: -35px;
+  left: 0px;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.item-kelompok:hover .item-meta {
+  bottom: 0px;
+}
+
+.item-meta h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500px;
+}
+.item-meta h6 {
+  color: #ff8100;
+}
+
+@media screen and (max-width: 780px) {
+  .team-content h2 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .team-wrapper {
+    margin: 0px;
+  }
+  .tentang-kami {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+  .team-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+  .team-content h2 {
+    font-size: 30px;
+  }
+  .team-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .team-content button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .team-image {
+    width: 100%;
+  }
+}
+.anggota {
+  background: #b6b6ca;
+  padding: 50px 0px;
+  font-family: "Arial", sans-serif;
+}
+
+/* =====================Tentang Kami End======================= */
+
+/* ===================Layanan Start=============== */
+.carousel {
+  background-image: url(beranda/banners.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+  left: 8%;
+}
+/* ===================Layanan End================= */
+
+/* ===================Contact Start================= */
+.kontak-start {
+  width: 100%;
+  padding: 10px;
+}
+.box-wrapper {
+  position: relative;
+  display: table;
+  width: 1100px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.info-wrap {
+  width: 35%;
+  height: 551px;
+  padding: 40px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(
+    144deg,
+    rgb(59, 136, 203) 0%,
+    rgb(48, 160, 145) 100%
+  );
+  color: #fff;
+}
+.info-title {
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.info-sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 17px;
+  letter-spacing: 0, 5px;
+  line-height: 26px;
+  text-align: justify;
+}
+.info-detail {
+  list-style: none;
+  margin: 60px 0px;
+}
+.info-detail li {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+.info-detail li i {
+  background: #47c6f4;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.info-detail li a {
+  color: #fff;
+  text-decoration: none;
+}
+.info-detail li a:hover {
+  color: #f01010;
+}
+.social-icon {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0px;
+}
+.social-icon li {
+  display: inline-block;
+}
+.social-icon li a {
+  background: #560cd6;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.social-icon li a:hover {
+  background: #fff;
+  color: #000000;
+}
+
+.form-warp {
+  width: 65%;
+  float: right;
+  padding: 40px 24px 30px 25px;
+  border-radius: 0px 30px 30px 0px;
+  background: #ecf0f3;
+}
+.form-title {
+  text-align: left;
+  margin-left: 23px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.form-fileds {
+  display: table;
+  width: 100%;
+  padding: 15px 5px 5px 5px;
+}
+.form-fileds input,
+.form-fileds textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  width: 100%;
+}
+.form-fileds textarea {
+  height: 132px;
+  resize: none;
+}
+.form-group {
+  width: 46%;
+  float: left;
+  padding: 0px 30px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #ecf0f3, inset -8px -8px 8px rgb(150, 136, 136);
+}
+.form-fileds .form-group:last-child {
+  width: 96%;
+}
+.submit-button {
+  width: 96%;
+  height: 60px;
+  margin: 0px 12px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(14, 128, 130);
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+  transition: 0.5s;
+}
+.submit-button:hover {
+  background: #31279d;
+}
+
+/* Responsive css */
+@media only screen and (max-width: 767px) {
+  .box-wrapper {
+    width: 100%;
+  }
+  .info-wrap,
+  .form-warp {
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+  .info-wrap {
+    border-radius: 30px 30px 0px 0px;
+  }
+  .form-warp {
+    border-radius: 0px 0px 30px 3px;
+  }
+  .form-group {
+    width: 100%;
+    float: none;
+    margin: 25px 0px;
+  }
+  .form-fileds :last-child,
+  .submit-button {
+    width: 100%;
+  }
+  .submit-button {
+    margin: 10px 0px;
+  }
+}
+/* ===================Contact End=================== */
+
+/* =======================Berita1 Start================= */
+.container-berita1 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.hero-berita1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  height: 300px;
+  background-image: url(berita/la-ode.jpeg);
+  background-size: cover;
+  background-position: 30 -10;
+  border-top: 10px solid lightskyblue;
+  border-bottom: solid salmon;
+}
+.hero-berita2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  height: 300px;
+  background-image: url(berita/berita3.jpg);
+  background-size: cover;
+  background-position: 10px;
+  border-top: 10px solid lightskyblue;
+  border-bottom: solid salmon;
+}
+
+.content-berita1 {
+  width: 900px;
+  padding: 20px;
+  text-align: justify;
+}
+.content-berita1 h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.content-berita1 penulis {
+  font-size: 11px;
+  margin-bottom: -25px;
+}
+.content-berita1 a {
+  color: #000000;
+  text-decoration: none;
+}
+.content-berita1 p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+aside {
+  text-align: justify;
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+  font-style: italic;
+}
+.aside img {
+  width: 40%;
+  height: 40%;
+}
+
+.card berita1 {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* =======================Berita1 End=================== */
+
+/* https://www.oceanweb.com/contact/ */
+/* https://econusa.id/ */
